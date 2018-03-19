@@ -31,10 +31,12 @@ public class Main {
             System.out.println(1);
         } else {
             for (; Math.abs(n) > 0;) {
-                c = c * x;
+
                 if (n < 0) {
+                   c = c / x;
                     n++;
                 } else {
+                    c = c * x;
                     n--;
                 }
             }
